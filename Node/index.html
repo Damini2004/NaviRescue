@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NaviRescue Drone</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="#">
+          <h1 class="logo">NaviRescue Drone</h1>
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">NaviRescue Drone</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="Close Menu"
+              data-nav-close-btn
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+            </li>
+
+           
+
+            <li class="navbar-item">
+              <a href="#services" class="navbar-link" data-navbar-link
+                >Applications</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#research" class="navbar-link" data-navbar-link>Research  Analysis</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#features" class="navbar-link" data-navbar-link
+                >Features</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-navbar-link
+                >Speciallization</a
+              >
+            </li>
+
+        
+          </ul>
+        </nav>
+
+        <a href="Rescue.html" class="btn">
+          <ion-icon
+            name="chevron-forward-outline"
+            aria-hidden="true"
+          ></ion-icon>
+
+          <span>Watch Our Live Interface</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Welcome to</p>
+
+              <h2 class="h2 hero-title">NaviRescue Drone</h2>
+
+              <p class="hero-text">
+                NaviRescue Drone with distributed Network (enabled with Object
+                Detection )
+              </p>
+
+              <button class="btn">Watch Video </button>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="drone2.gif"
+                width="694"
+                height="529"
+                loading="lazy"
+                alt="hero-banner"
+                class="w-100 banner-animation"
+              />
+            </figure>
+          </div>
+        </section>
+
+
+
+
+        <!-- 
+        - #FEATURES
+      -->
+
+      <!-- <section style="margin: 0 auto; " >
+        <h2 class="h2 section-title underline">Research & Analysis</h2>
+        <div style="margin: 0 auto; display: flex; justify-content: space-around;" >
+        <div style="background-color: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 400px; height: 450px; margin: 20px;">
+          <img src="detection.png" style="width: 100%; height:60%; object-fit: cover; border-radius: 10px 10px 0 0;" alt="Card image">
+          <h2 style="margin-top: 0; font-size: 24px; font-weight: bold;">Realtime Object Detection</h2>
+          <p style="font-size: 16px; color: #666;">Faster detection of onject like human,things,etc in other to take precaution against disaster.</p>
+       <a href="./drone.html"> <button style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Read More</button>
+       </a>  
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 400px; margin: 20px;">
+          <img src="survey.jpg" style="width: 100%; height: 60%; object-fit: cover; border-radius: 10px 10px 0 0;" alt="Card image">
+          <h2 style="margin-top: 0; font-size: 24px; font-weight: bold;">Drone Contribution in Rescue Operation</h2>
+          <p style="font-size: 16px; color: #666;">Construction and Functioning of the Drone in disaster Situation.</p>
+        <a href="./research.html"> <button style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Read More</button>
+        </a>  </div>
+
+        <div style="background-color: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 400px; margin: 20px;">
+          <img src="book.webp" style="width: 100%; height: 60%; object-fit: cover; border-radius: 10px 10px 0 0;" alt="Card image">
+          <h2 style="margin-top: 0; font-size: 24px; font-weight: bold;"> Updated Article</h2>
+          <p style="font-size: 16px; color: #666;">Further research regarding the Topic</p>
+          <button style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Read More</button>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 300px; margin: 20px;">
+          <img src="image.jpg" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px 10px 0 0;" alt="Card image">
+          <h2 style="margin-top: 0; font-size: 24px; font-weight: bold;">Card Title</h2>
+          <p style="font-size: 16px; color: #666;">Card description</p>
+          <button style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Read More</button>
+        </div> 
+
+      </div>
+        
+      </section> -->
+
+      <section style="margin: 0 auto;width: 1000px; margin-top: 50px;" id="research" >
+    <div class="container" style=" margin-left: 0;text-align: center;">
+      <h1 style="font-size: 30px;" >Research And Analysis</h1>
+      <div class="main-content" style=" padding: 50px;justify-content: center; margin: 0 auto; ">
+        <div class="container" style="" >
+       
+            <div class="chart " style="display: flex; justify-content: space-between; " >
+              <div style="width: 600px; border: 2px solid white; padding: 10px; margin: 5px;" >
+                <h2 style="font-size: 20px;" >Drone Usage By Industry Sector</h2>
+              <canvas id="myChart" style="" ></canvas></div>
+              <div  style="width: 600px;border: 2px solid white; padding: 10px; margin: 5px;">
+                <h2 style="font-size: 20px;" > Drone Heights During Rescue Operation</h2>
+              <canvas id="line"></canvas>
+            </div>     
+          </div>
+          <div class="chart"  style="display: flex; justify-content: space-between; "  >
+            <div style="width: 600px;border: 2px solid white; padding: 10px; margin: 5px;" >
+            <h2 style="font-size: 20px;" >Drone Used by Countries in Rescue Operation</h2>  
+              <canvas id="doughnut"  ></canvas>
+            </div>
+            <div style="width: 600px; border: 2px solid white; padding: 10px; margin: 5px;" >
+              <h2 style="font-size: 20px;" >Applications of drone in Disaster Management</h2>  
+                <canvas id="pie" width="400px" ></canvas>
+              </div>
+          </div>
+          <br><br>
+          <div class="chart"  style="display: flex; justify-content: space-between; "  >
+            <div style="width: 600px; border: 2px solid white; padding: 10px;" >
+            <h2 style="font-size: 20px;" >Drone Payload Affect Flight Time</h2>  
+              <canvas id="scatter"  ></canvas>
+            </div>
+            <div style="width: 600px; border: 2px solid white; padding: 10px;" >
+              <h2 style="font-size: 20px;" >Top 10 Countries with most diasaters, 2005-2014</h2> 
+              <p>Number of disasters <p>Total damage ($ billion)</p></p>
+
+              <canvas id="bar2" width="400" ></canvas>
+            </div>
+          </div>
+          
+      </div>
+     
+          </div>
+      </div>
+    </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+          <h2 class="h2 section-title underline">Applications</h2>
+
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Drone Driver</h3>
+
+                <p class="text">
+                  Drone Command Center for seamless rescue operations. Empowers global control, live data streaming, user-friendly interface, data security, mission logs, real-time alerts, remote collaboration, training, object detection, and visual feedback.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="woman-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Emergencies</h3>
+
+                <p class="text">
+                  The Drone Command Center manages emergencies such as borewell entrapments and collapsed structures, facilitating real-time monitoring and swift rescue operations. It ensures the safety of individuals in distress through effective response strategies.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Specialities</h3>
+
+                <p class="text">
+                  The described Drone Command Center specializes in managing emergencies like borewell entrapments and collapsed structures, providing real-time monitoring and swift rescue operations to ensure the safety of individuals in distress.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+        <section class="section features" id="features" style="margin-top: 0px;">
+          <div class="container">
+            <h2 class="h2 section-title underline">Key Features</h2>
+
+            <ul class="features-list">
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="flash-outline"></ion-icon>
+                  </div>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      1.Control and monitor the NaviRescue Drone globally in
+                      real-time.
+                    </h3>
+
+                    <p class="text">
+                      Intuitively designed interface for easy navigation and
+                      quick access to vital information.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="layers-outline"></ion-icon>
+                  </div>
+
+                  <div class="content">
+                    <h3 class="h3 title">3.Robust data encryption and authentication protocols
+                      prioritize privacy and security.</h3>
+                   
+                    <p class="text">
+                       Support for remote collaboration enables experts to
+                      contribute insights and make collaborative decisions.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <figure class="features-banner">
+              <img
+                src="./assets/images/feautres-banner.png"
+                width="369"
+                height="318"
+                loading="lazy"
+                alt="Features Banner"
+                class="w-100 banner-animation"
+              />
+            </figure>
+
+            <ul class="features-list">
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="bandage-outline"></ion-icon>
+                  </div>
+
+                  <div class="content">
+                    <h3 class="h3 title"> 2.Assess the situation:   
+                    </h3>
+
+                    <p class="text">
+                      Capture detailed mission logs and analyze data to optimize
+                      rescue strategies.  
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                  </div>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      4.Real-time alerting systems notify of significant
+                      developments, enhancing operational efficiency.
+                    </h3>
+
+                    <p class="text">
+                      Interactive training and simulation modules prepare
+                      personnel for real-world rescue scenarios.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- <li>
+              <div class="features-card" >
+
+                <div class="icon">
+                  <ion-icon name="sparkles-sharp"></ion-icon>
+                </div>
+      
+                <div >
+                  <h3 class="h3 title">5.Stay calm and wait for help:
+
+                  </h3>
+      
+                  <p>• Once you've called emergency services, provide them with all the information you can about the accident and the victims' conditions. <br>
+                    • Stay with the victim and continue monitoring them until help arrives.
+                    
+                  </p>
+                </div>
+            </div>
+            </li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" id="blog">
+          <div class="container">
+            <h2 class="h2 section-title underline">Specializations</h2>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="assets/images/drone.jpg"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Nose Bleeding Image"
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#">Drone Support: </a>
+                    </h3>
+
+                    <p class="text">Specialize in integrating drone technology with the app, allowing users to deploy drones for aerial reconnaissance and assistance during rescue missions. This could involve features like automated flight control, live video streaming, and thermal imaging for detecting heat signatures in borewells.
+                    </p>
+
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+
+                        <time datetime="2024-09-05">5 September, 2024</time>
+                      </div>
+
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <data value="15">15</data>
+                      </button>
+
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="image.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Bleeding image"
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#">Payload Dropping Mechanism</a>
+                    </h3>
+
+                    <p class="text">
+                      A payload dropping mechanism is a critical component of a drone's rescue operation capabilities, allowing it to deliver essential supplies, such as food, water, first aid kits, and communication devices, to people in need. The mechanism is typically designed to be lightweight, reliable, and easy to operate.                    </p>
+
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+
+                        <time datetime="2024-09-05">5 September, 2024</time>
+                      </div>
+
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <data value="15">15</data>
+                      </button>
+
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="https://images.prismic.io//intuzwebsite/7a3d7e62-18ff-4502-b6cb-fde0bd23c4d0_image+%286%29.png?w=2400&q=80&auto=format,compress&fm=png8"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Low BP"
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#">Remote surveillance under  real time monitoring</a>
+                    </h3>
+
+                    <p class="text">
+
+
+                      Remote surveillance utilizes cameras and sensors to gather data from a location, transmitting it wirelessly to a central station. Operators analyze for anomalies, prompting immediate alerts. The system runs continuously, recording footage for analysis, and works with other security systems for a comprehensive threat response.
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+
+                        <time datetime="2024-09-05">5 September, 2024</time>
+                      </div>
+
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <data value="15">15</data>
+                      </button>
+
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="https://miro.medium.com/v2/resize:fit:872/0*ByD9YgAm-H--o70v.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="High Bp Image"
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#">Object Detection and assistance in hazardous environment </a>
+                    </h3>
+
+                    <p class="text">
+                      They identify dangers in real-time, triggering alerts for personnel. These adaptable systems integrate with safety protocols, logging data for analysis and continuous improvement, ensuring safety and efficiency in challenging conditions.
+                    </p>
+
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+
+                        <time datetime="2024-09-05">5 September, 2024</time>
+                      </div>
+
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <data value="15">15</data>
+                      </button>
+
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+        <!-- 
+        - #ABOUT
+      
+
+      <section class="section about" id="about">
+        <div class="container">
+          <figure class="about-banner">
+            <img
+              src="./assets/images/about-banner-1.png
+            "
+              width="700"
+              height="532"
+              loading="lazy"
+              alt="about banner"
+              class="w-100 banner-animation"
+            />
+            <img
+              src="./assets/images/about-banner.png"
+              width="700"
+              height="532"
+              loading="lazy"
+              alt="about banner"
+              class="w-100 banner-animation"
+            />
+          </figure>
+
+          <div class="about-content">
+            <h2 class="h2 section-title underline">About Us:</h2>
+
+            <p class="about-text">
+              Our team consists of passionate individuals dedicated to making a positive impact in emergency response. From experienced developers to skilled designers, each member brings unique expertise and perspective to our mission.
+            </p>
+
+            <h2 class="h2 section-title underline" style="font-size: x-large">
+              Vision:
+            </h2>
+
+            <p class="about-text">
+              At NaviRescue Drone, our mission is to provide rescue personnel
+              with the tools and support they need to save lives and ensure
+              the safety of those in distress. We are committed to continuous
+              improvement and innovation, striving to make a meaningful
+              difference in emergency situations.
+            </p>
+
+            <h2 class="h2 section-title underline" style="font-size: x-large">
+              Mission:
+            </h2>
+
+            <p class="about-text">
+              At NaviRescue Drone, our mission is to provide rescue personnel
+              with the tools and support they need to save lives and ensure
+              the safety of those in distress. We are committed to continuous
+              improvement and innovation, striving to make a meaningful
+              difference in emergency situations
+            </p>
+
+            <h2 class="h2 section-title underline" style="font-size: x-large">
+              Future Goals:
+            </h2>
+
+            <p class="about-text">
+              We are constantly working on new features and updates to further improve our app's capabilities. Stay tuned for exciting developments as we continue to evolve and expand our offerings.
+            </p>
+
+            <ul class="stats-list">
+              <li class="stats-card">
+                <p class="h3 stats-title">1</p>
+
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">1</p>
+
+                <p class="stats-text">Project Lunched</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">1</p>
+
+                <p class="stats-text">Days Completed</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <!-- <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">NaviRescue Drone</a>
+
+            <p class="text">
+              Saving Lives, Saving Seconds, "Every Second matters...!"
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Our links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Applications</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Team</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">#</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">#</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">#</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">#</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">#</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">#</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Other links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Support</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Research Analysis</p>
+            </li>
+
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="call"></ion-icon>
+              </div>
+
+              <div>
+                <a href="tel:+2484214313" class="footer-item-link"
+                  >+91 ...........</a
+                >
+                <a href="tel:+2486871365" class="footer-item-link"
+                  >+91 8600122587</a
+                >
+              </div>
+            </li>
+
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+
+              <div>
+                <a href="mailto:info@desinic.com" class="footer-item-link"
+                  >helpline@gmail.com</a
+                >
+                <a href="mailto:help@desinic.com" class="footer-item-link"
+                  >helpline@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+
+              <address class="footer-item-link">In the Hell</address>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">The End...</div>
+    </footer> -->
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" ></script>
+  <script>
+const ctx = document.getElementById('myChart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Mining Industry', 'Telecommunications', 'Insurance', 'Media', 'Safety', 'Transport','Agriculture','Others'],
+    datasets: [{
+      label: 'Drone Usage',
+      data: [3.4, 5, 5.3, 6.9, 8.2, 10.2, 25.5 , 35.5],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+</script>
+<script>
+ const ctx2 = document.getElementById('doughnut');
+
+new Chart(ctx2, {
+type: 'doughnut',
+data: {
+ labels: ['Various', 'US', 'China', 'Italy', 'UK', 'Japan','Indonesia','Taiwan','South Korea','Canada','Sweden','Spain','Greece'],
+ datasets: [{
+   label: 'Percentage',
+   data: [21, 12, 11,10,6,6,6,6,6,4,4,4,4],
+   borderWidth: 1
+ }]
+},
+options: {
+ scales: {
+   y: {
+     beginAtZero: true
+   }
+ }
+}
+});
+</script>
+<script>
+  const ctx3 = document.getElementById('line');
+
+new Chart(ctx3, {
+type: 'line',
+data: {
+ labels: ['0', '25', '50', '75', '100', '125','150','175'],
+ datasets: [{
+   label: 'Area Coverage(km2) VS Height(m)',
+   borderColor: 'rgb(255, 99, 132)', // Changed color to a shade of pink
+   data: [0,40,60,75,95,105,110,120],
+   borderWidth: 1
+ }]
+},
+options: {
+ scales: {
+   y: {
+     beginAtZero: true
+   }
+ }
+}
+});
+</script>
+<script>
+ const ctx4 = document.getElementById('pie');
+
+new Chart(ctx4, {
+type: 'pie',
+data: {
+ labels: ['Natural disaster', 'Man-made disaster', 'Simulated disaster', 'Others'],
+ datasets: [{
+   label: '',
+   data: [42, 2, 25,31],
+   borderWidth: 1,
+   backgroundColor: [
+     'rgba(255, 99, 132, 0.2)', // Natural disaster
+     'rgba(54, 162, 235, 0.2)', // Man-made disaster
+     'rgba(255, 206, 86, 0.2)', // Simulated disaster
+     'rgba(75, 192, 192, 0.2)' // Others
+   ]
+ }]
+},
+options: {
+ scales: {
+   y: {
+     beginAtZero: true
+   }
+ }
+}
+});
+</script>
+<script>
+ const ctx5 = document.getElementById('scatter');
+
+new Chart(ctx5, {
+type: 'scatter',
+data: {
+ datasets: [{
+   label: 'Disaster Response Times',
+   data: [{
+     x: 0,
+     y: 40
+   }, {
+     x: 1800,
+     y: 35
+   }, {
+     x: 2000,
+     y: 30
+   }, {
+     x: 2200,
+     y: 28
+   }, {
+     x: 2400,
+     y: 25
+   }, {
+     x: 2650,
+     y: 23
+   }
+   , {
+     x: 2800,
+     y: 22
+   }, {
+     x: 3000,
+     y: 18
+   }
+ ],
+   backgroundColor: 'rgba(255, 99, 132, 0.2)',
+   borderColor: 'rgba(255, 99, 132, 1)',
+   borderWidth: 1
+ }]
+},
+options: {
+ scales: {
+   x: {
+     beginAtZero: true
+   },
+   y: {
+     beginAtZero: true
+   }
+ }
+}
+});
+</script>
+ <script>
+   const ctx6 = document.getElementById('bar2').getContext('2d');
+   new Chart(ctx6, {
+     type: 'bar',
+     data: {
+       labels: ['Mining Industry', 'Telecommunications', 'Insurance', 'Media', 'Safety', 'Transport','Agriculture','Others'],
+       datasets: [{
+         label: 'Drone Usage',
+         data: [3.4, 5, 5.3, 6.9, 8.2, 10.2, 25.5 , 35.5],
+         borderWidth: 1
+       }]
+     },
+     options: {
+       scales: {
+         y: {
+           beginAtZero: true
+         }
+       }
+     }
+   });
+  </script> 
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

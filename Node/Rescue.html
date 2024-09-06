@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Tracker</title>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f44336;
+    padding: 10px;
+    color: rgb(240, 234, 234);
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Section Layout */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #f4eeee;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+.sidebar .monitoring-options h3 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.sidebar .target-details h3 {
+    margin-top: 20px;
+}
+
+.sidebar .actions button {
+    margin: 10px 5px 0 0;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: rgb(240, 228, 228);
+    cursor: pointer;
+}
+
+/* Main Map Styling */
+.map-view {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-view img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Footer/Bottom Nav */
+footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-nav button {
+    background-color: #ddd;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer-nav button:hover {
+    background-color: #ccc;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>NaviRescue Drone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">PTZ</a></li>
+                <li><a href="#">Alerts</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Options</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Sidebar for Monitoring -->
+        <div class="sidebar">
+            <h2>Monitoring</h2>
+            <div class="monitoring-options">
+                <h3>Verified</h3>
+                <ul>
+                    <li>Remote Control <span>03:23 min</span></li>
+                    <li>Drone <span>02:18 min</span></li>
+                </ul>
+            </div>
+            <div class="target-details">
+                <h3>Details Target: 27</h3>
+                <p>Drone Model</p>
+                <ul>
+                    <li>Location: 51.313491, 9.545254</li>
+                    <li>Altitude: 47m</li>
+                    <li>Speed: 16 m/s</li>
+                    <li>Heading: 160°</li>
+                    <li>Reach in: 4 sec</li>
+                </ul>
+                <div class="actions">
+                    <button>User 1</button>
+                    <button>User 2</button>
+                    <button>More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Map Section -->
+        <div class="map-view">
+            <div class="map">
+                <!-- Placeholder for the map image or integrated interactive map -->
+                <img src="map.png" alt="Map View">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer or Target Selection -->
+    <footer>
+        <div class="footer-nav">
+            <button>Verified targets</button>
+            <button>Unverified targets</button>
+            <button>All</button>
+        </div>
+    </footer>
+</body>
+</html>

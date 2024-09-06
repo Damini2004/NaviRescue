@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up / in page </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- div container start -->
+    <div class="container">
+        <!-- left side div start  -->
+        <div class="left">
+            <h1 id="hold">S2S - Signal to Save</h1>
+        </div>
+        <!-- left side div end  -->
+        
+        <!-- right side div start-->
+        <div class="right">
+            <!-- form switch links start -->
+            <div class="switchs">
+                  <button class="switchlink" ><a href="sign.html" th:href="@{/signup}" >Sign Up</a> </button>
+                <button class="switchlink" ><a href="signin.html" th:href="@{/signin}" >Log In</a></button>
+            </div>
+            <!-- form switch links end-->
+
+            <!-- switch content container start -->
+            <div class="switch-container">
+
+                <!-- sign up form start -->
+                <div id="SignUp" class="switchcontent">
+                    <h1 class="title">Sign Up...</h1>
+                    <form method="post" action="" th:action="@{/do-register}" th:object="${driver}" data-netlify="true">
+                        <div class="field-wrap">
+                            <input name="name" type="text" th:value="${driver.name}"  id="name" required autocomplete="off" />
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="ambulanceNo" type="text" id="ambulanceNo" th:value="${driver.ambulanceNo}" required autocomplete="off" />
+                            <label for="ambulanceNo">Ambulence No.</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="lisence" type="text" id="lisence" th:value="${driver.license}" required autocomplete="off" />
+                            <label for="lisence">Lisence</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="hospitalName" type="text" id="hospitalName" th:value="${driver.hospitalName}" required autocomplete="off" />
+                            <label for="hospitalName">Hospital Name</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="contactNo" type="text" id="contactNo" th:value="${driver.contactNo}" required autocomplete="off" />
+                            <label for="contactNo">Contact No.</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="password" type="password" id="password" required autocomplete="off" />
+                            <label for="password">Password</label>
+                        </div>
+                        <button type="submit" class="actionbtn" />Get Started</button>
+                    </form>
+                </div>
+                
+            </div>
+            <!-- switch content container end -->
+        </div>
+        <!-- right side div end  -->
+    </div>
+    <!-- div container end -->
+    <script src="script.js"></script>
+</body>
+
+</html>

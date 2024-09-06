@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container" style="display: flex; justify-content: space-between; margin-left: 0; height: 1750px; width: 100%;">
+        <div class="sidebar" style="background-color: #333; color: #fff; padding: 20px; width: 40%; height: 100%;">
+            <h2>Research <br> & <br> Analysis</h2>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 10px;"><a href="./index.html" style="color: #fff; text-decoration: none;">Back To Home</a></li>
+            </ul>
+        </div>
+        <div class="main-content" style=" padding: 50px; ">
+          <div class="container" style="" >
+           <h1>Research And Analysis</h1>
+              <div class="chart " style="display: flex; justify-content: space-between; " >
+                <div style="width: 600px; border: 2px solid white; padding: 10px; margin: 5px;" >
+                  <h2>Drone Usage By Industry Sector</h2>
+                <canvas id="myChart" style="" ></canvas></div>
+                <div  style="width: 600px;border: 2px solid white; padding: 10px; margin: 5px;">
+                  <h2>Drone Heights During Rescue Operation</h2>
+                <canvas id="line"></canvas>
+              </div>
+            </div>
+            <div class="chart"  style="display: flex; justify-content: space-between; "  >
+              <div style="width: 600px;border: 2px solid white; padding: 10px; margin: 5px;" >
+              <h2>Drone Used by Countries in Rescue Operation</h2>  
+                <canvas id="doughnut"  ></canvas>
+              </div>
+              <div style="width: 600px; border: 2px solid white; padding: 10px; margin: 5px;" >
+                <h2>Applications of drone in Disaster Management</h2>  
+                  <canvas id="pie" width="400px" ></canvas>
+                </div>
+            </div>
+            <br><br>
+            <div class="chart"  style="display: flex; justify-content: space-between; "  >
+              <div style="width: 600px; border: 2px solid white; padding: 10px;" >
+              <h2>Drone Payload Affect Flight Time</h2>  
+                <canvas id="scatter"  ></canvas>
+              </div>
+              <div style="width: 600px; height: 500px; border: 2px solid white; padding: 10px;" >
+                <h2>Top 10 Countries with most diasaters, 2005-2014</h2> 
+                <p>Number of disasters <p>Total damage ($ billion)</p></p>
+
+                <canvas id="bar2" width="400" ></canvas>
+              </div>
+            </div>
+            
+        </div>
+       
+            </div>
+        </div>
+        
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" ></script>
+     <script>
+   const ctx = document.getElementById('myChart').getContext('2d');
+   new Chart(ctx, {
+     type: 'bar',
+     data: {
+       labels: ['Mining Industry', 'Telecommunications', 'Insurance', 'Media', 'Safety', 'Transport','Agriculture','Others'],
+       datasets: [{
+         label: 'Drone Usage',
+         data: [3.4, 5, 5.3, 6.9, 8.2, 10.2, 25.5 , 35.5],
+         borderWidth: 1
+       }]
+     },
+     options: {
+       scales: {
+         y: {
+           beginAtZero: true
+         }
+       }
+     }
+   });
+  </script>
+  <script>
+    const ctx2 = document.getElementById('doughnut');
+
+new Chart(ctx2, {
+  type: 'doughnut',
+  data: {
+    labels: ['Various', 'US', 'China', 'Italy', 'UK', 'Japan','Indonesia','Taiwan','South Korea','Canada','Sweden','Spain','Greece'],
+    datasets: [{
+      label: 'Percentage',
+      data: [21, 12, 11,10,6,6,6,6,6,4,4,4,4],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+  </script>
+  <script>
+     const ctx3 = document.getElementById('line');
+
+new Chart(ctx3, {
+  type: 'line',
+  data: {
+    labels: ['0', '25', '50', '75', '100', '125','150','175'],
+    datasets: [{
+      label: 'Area Coverage(km2) VS Height(m)',
+      borderColor: 'rgb(255, 99, 132)', // Changed color to a shade of pink
+      data: [0,40,60,75,95,105,110,120],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+  </script>
+  <script>
+    const ctx4 = document.getElementById('pie');
+
+new Chart(ctx4, {
+  type: 'pie',
+  data: {
+    labels: ['Natural disaster', 'Man-made disaster', 'Simulated disaster', 'Others'],
+    datasets: [{
+      label: '# of Votes',
+      data: [42, 2, 25,31],
+      borderWidth: 1,
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)', // Natural disaster
+        'rgba(54, 162, 235, 0.2)', // Man-made disaster
+        'rgba(255, 206, 86, 0.2)', // Simulated disaster
+        'rgba(75, 192, 192, 0.2)' // Others
+      ]
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+  </script>
+  <script>
+    const ctx5 = document.getElementById('scatter');
+
+new Chart(ctx5, {
+  type: 'scatter',
+  data: {
+    datasets: [{
+      label: 'Disaster Response Times',
+      data: [{
+        x: 0,
+        y: 40
+      }, {
+        x: 1800,
+        y: 35
+      }, {
+        x: 2000,
+        y: 30
+      }, {
+        x: 2200,
+        y: 28
+      }, {
+        x: 2400,
+        y: 25
+      }, {
+        x: 2650,
+        y: 23
+      }
+      , {
+        x: 2800,
+        y: 22
+      }, {
+        x: 3000,
+        y: 18
+      }
+    ],
+      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      borderColor: 'rgba(255, 99, 132, 1)',
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      x: {
+        beginAtZero: true
+      },
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+  </script>
+    <script>
+      const ctx6 = document.getElementById('bar2').getContext('2d');
+      new Chart(ctx6, {
+        type: 'bar',
+        data: {
+          labels: ['Mining Industry', 'Telecommunications', 'Insurance', 'Media', 'Safety', 'Transport','Agriculture','Others'],
+          datasets: [{
+            label: 'Drone Usage',
+            data: [3.4, 5, 5.3, 6.9, 8.2, 10.2, 25.5 , 35.5],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+     </script> 
+  <script src="script.js" ></script>
+  <script src="script2.js" ></script>
+</body>
+</html>

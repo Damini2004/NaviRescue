@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up / in page </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signStyle.css">
+</head>
+
+<body>
+    <!-- div container start -->
+    <div class="container">
+        <!-- left side div start  -->
+        <div class="left">
+            <h1 id="hold"></h1>
+        </div>
+        <!-- left side div end  -->
+        
+        <!-- right side div start-->
+        <div class="right">
+            <!-- form switch links start -->
+            <div class="switchs">
+                <button class="switchlink" ><a href="sign.html">Sign Up</a> </button>
+                <button class="switchlink" ><a href="signin.html">Log In</a></button>
+            </div>
+            <!-- form switch links end -->
+
+            <!-- switch content container start -->
+            <div class="switch-container">
+
+                <!-- sign up form start -->
+                <div id="SignUp" class="switchcontent" >
+                    <h1 class="title">Sign Up...</h1>
+                    <form method='POST' name='SignUp' data-netlify="true">
+                        <div class="field-wrap">
+                            <input name="name" type="text" id="name" required autocomplete="off" />
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="email" type="email" id="email" required autocomplete="off" />
+                            <label for="email">Rover No.</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="license" type="text" id="license" required autocomplete="off" />
+                            <label for="license">License</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="hospitalName" type="text" id="Hospital_Name" required autocomplete="off" />
+                            <label for="Hospital_Name">City Name</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="contactNo" type="tel" id="Contact_No" required autocomplete="off" />
+                            <label for="Contact_No">Contact No.</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="password" type="password" id="Password" required autocomplete="off" />
+                            <label for="Password">Password</label>
+                        </div>
+                        <button type="submit" class="actionbtn" />Get Started</button>
+                    </form>
+                </div>
+                <!-- sign up form end -->
+
+                <!-- login form start -->
+                <!-- <div id="LogIn" class="switchcontent">
+                    <h1 class="title">Welcome Back!</h1>
+                    <form method='POST' name='login' data-netlify="true">
+                        <div class="field-wrap">
+                            <input name="license" type="text" id="license" required autocomplete="off" />
+                            <label for="license">License</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input name="signInPassword" type="password" id="signInPassword" required autocomplete="off" />
+                            <label for="signInPassword">Password</label>
+                        </div>
+                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                        <button type="submit" class="actionbtn" />Log In</button>
+                    </form>
+                </div> -->
+                <!-- login form end -->
+
+            </div>
+            <!-- switch content container end -->
+        </div>
+        <!-- right side div end  -->
+    </div>
+    <!-- div container end -->
+    <script src="signScript.js"></script>
+</body>
+
+</html>
